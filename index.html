@@ -12,25 +12,27 @@
 </head>
 <body class="bg-[#1A0B2E] inter">
     
-<section class="w-full flex pt-[30px] pb-[30px] border border-b-[#412567] justify-center items-center">
+<section class="w-full flex max-sm:pt-[20px] lg:pt-[30px] pb-[30px] max-sm:pl-[20px] max-sm:pr-[20px] border border-b-[#412567] justify-center items-center">
     <nav class="w-[1200px] flex justify-between items-center flex-row">
         <div class="nav-logo"><img src="./assets/Group 18 (1).png" alt=""></div>
-        <div class="nav-menu flex justify-center items-center">
+        <div class="max-sm:hidden nav-menu flex justify-center items-center">
             <ul class="flex gap-8 flex-row justify-center align-middle">
                 <li class="font-medium text-white leading[1.2em]"><a href="">About</a></li>
                 <li class="font-medium text-white leading[1.2em]"><a href="">Episodes</a></li>
                 <li class="font-medium text-white leading[1.2em]"><a href="">Host</a></li>
             </ul>
         </div>
-        <div class="nav-btn"><a class="text-white flex justify-center items-center p-[12px_16px] rounded-4xl bg-[linear-gradient(90deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] gap-1" href="">Subscribe <img src="./assets/ArrowRight.png" alt=""></a>
+        <div class="max-sm:hidden nav-btn"><a class="text-white flex justify-center items-center p-[12px_16px] rounded-4xl bg-[linear-gradient(90deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] gap-1" href="">Subscribe <img src="./assets/ArrowRight.png" alt=""></a>
         </div>
+        <div class="lg:hidden"> <img src="./assets/hamburger-menu.png" alt=""></div>
+         
     </nav>
 </section>
 
-<section class="w-full bg-[url(/assets/hero-bg.png)] h-[100vh] h-[calc(100vh-101px)] bg-cover bg-top bg-no-repeat p-[101px_101px] flex justify-center items-center">
+<section class="w-full max-sm:bg-[url(/assets/mobile-hero.png)] max-sm:p-[40px_40px]  max-sm:bg-contain lg:bg-[url(/assets/hero-bg.png)] max-sm:h-[55vh] lg:h-[100vh] h-[calc(100vh-101px)] bg-cover bg-top bg-no-repeat lg:p-[101px_101px] flex justify-center items-center">
     <div class="hero-section w-[1200px] flex flex-col justify-center gap-10 items-center"> 
         <div class="flex justify-center items-center relative flex-col">
-            <div class="w-[350px] h-[350px] justify-center bg-[url(/assets/hero-circle.png)] bg-cover bg-center bg-no-repeat p-[70px_75px] items-center flex flex-col">
+            <div class="max-sm:w-[200px] max-sm:h-[200px] lg:w-[350px] lg:h-[350px] justify-center bg-[url(/assets/hero-circle.png)] bg-cover bg-center bg-no-repeat p-[70px_75px] items-center flex flex-col">
                 <img src="./assets/microphone.png" alt="">
             </div>
             <h3 class="text-[#1A0B2E] bg-[#00FF88] shadow-[0_3px_27px_rgba(0,255,136,0.5)] p-[8px_16px] text-[18px] leading-4 font-semibold rounded-4xl absolute top-10 right-0">NEW</h3>
@@ -38,7 +40,7 @@
 
         <div class="flex justify-center items-center flex-col gap-6">
             <div class="flex justify-center items-center flex-col gap-2">
-                <h3 class="text-6xl text-center font-extrabold text-white">TechWave</h3>
+                <h3 class="max-sm:text-[40px] lg:text-6xl text-center font-extrabold text-white">TechWave</h3>
                 <p class="font-normal text-white text-[16px] text-center break-words" >Your daily dose of tech insights, productivity hacks, and personal growth</p>
             </div>
             <div class="flex flex-row gap-2 justify-center items-center">
@@ -52,10 +54,10 @@
     </div>
 </section>
 
-<section class="w-full pt-[50px] pb-[120px] flex justify-center items-center">
+<section class="w-full pt-[50px] max-sm:pb-[40px] lg:pb-[120px] max-sm:pl-[20px] max-sm:pr-[20px] flex justify-center items-center">
     <div class="w-[1200px] flex flex-col justify-center items-center">
-        <div class="w-[50%] flex flex-col justify-center items-center gap-4 pb-[80px] ">
-            <h3 class="text-5xl text-center font-bold text-white">About the Podcast</h3>
+        <div class="max-sm:w-full lg:w-[50%] flex flex-col justify-center items-center gap-4 max-sm:pb-[40px] lg:pb-[80px] ">
+            <h3 class="max-sm:text-[32px] lg:text-5xl text-center font-bold text-white">About the Podcast</h3>
             <p class="font-normal text-white text-[16px] text-center break-words" >TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
 We break down complex topics into digestible insights, explore productivity strategies that actually work,
 and share stories of personal growth from industry leaders.
@@ -64,24 +66,23 @@ Join thousands of young professionals and tech enthusiasts who start their day w
         </div>
 
 
-        <div class="w-full pl-[45px] pr-[45px] flex flex-row justify-between border-t border-[#312343]
-   justify-between pt-[80px] ">
-            <div class="grid gri-cols-[repeat (4 ,1fr)]  justify-center items-center">
+        <div class="w-full lg:pl-[45px] lg:pr-[45px] flex max-sm:flex-row max-sm:flex-wrap lg:flex-row justify-between border-t border-[#312343] max-sm:justify-center max-sm:gap-[30px] max-sm:pt-[40px] lg:pt-[80px] ">
+            <div class=" flex flex-col justify-between max-sm:w-[180px] items-center">
                 <h4 class="text-5xl text-center font-black text-[#00FF88]">150K+</h4>
                 <p class="font-normal text-white text-[16px] text-center  " >Monthly Listeners</p>
             </div>
 
-            <div class="flex flex-col gap-4 justify-center items-center">
+            <div class="flex flex-col gap-4 justify-center max-sm:w-[180px] items-center">
                 <h4 class="text-5xl text-center font-black text-[#00FF88]">200+</h4>
                 <p class="font-normal text-white text-[16px] text-center  " >Episodes Published</p>
             </div>
 
-            <div class="flex flex-col gap-4 justify-center items-center">
+            <div class="flex flex-col gap-4 justify-center max-sm:w-[180px] items-center">
                 <h4 class="text-5xl text-center font-black text-[#00FF88]">4.9★</h4>
                 <p class="font-normal text-white text-[16px] text-center  " >Average Rating</p>
             </div>
 
-            <div class="flex flex-col gap-4 justify-center items-center">
+            <div class="flex flex-col gap-4 justify-center max-sm:w-[180px] items-center">
                 <h4 class="text-5xl text-center font-black text-[#00FF88]">50+</h4>
                 <p class="font-normal text-white text-[16px] text-center  " >Industry Experts</p>
             </div>
@@ -90,27 +91,27 @@ Join thousands of young professionals and tech enthusiasts who start their day w
     </div>
 </section>
 
-<section class="w-full bg-[#230E3D] flex justify-center items-center pt-[120px] pb-[120px]">
-    <div class="w-[1200px] flex justify-center items-center flex-col gap-10">
+<section class="w-full bg-[#230E3D] flex justify-center items-center max-sm:p-[40px_20px] lg:pt-[120px] lg:pb-[120px]">
+    <div class="max-sm:w-[100%]  lg:w-[1200px] flex justify-center items-center flex-col max-sm:gap-[16px] lg:gap-10">
         <div class="flex justify-center items-center">
-            <h3 class="text-5xl text-center font-bold text-white">Why Choose TechWave</h3>
+            <h3 class="max-sm:text-[32px] lg:text-5xl text-center font-bold text-white">Why Choose TechWave</h3>
         </div>
             
-            <div class="flex flex-col gap-[30px]">
-                <div class="flex flex-row gap-[30px]">
-                    <div class="bg-[#35116566] w-[380px] justify-center rounded-[40px] p-[40px] flex flex-col gap-4">
-                        <img class="w-[60px] h-[60px]" src="./assets/headphone.png" alt="">
+            <div class="flex max-sm:w-full flex-col gap-[30px]">
+                <div class="flex max-sm:flex-col lg:flex-row gap-[30px]">
+                    <div class="bg-[#35116566] max-sm:w-full lg:w-[380px] justify-center max-sm:rounded-[24px] lg:rounded-[40px] max-sm:p-[24px] lg:p-[40px] flex flex-col gap-4">
+                        <img class="max-sm:w-[40px] max-sm:h-[40px] lg:w-[60px] lg:h-[60px]" src="./assets/headphone.png" alt="">
                         <h4 class="text-white text-2xl font-bold text-start">Premium Audio Quality</h4>
                         <p class="font-normal text-white text-[16px] text-start  " >Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
                     </div>
-                    <div class="w-[790px] flex flex-col gap-[30px]">
-                        <div class="bg-[#35116566]   justify-center rounded-[40px] p-[40px] flex flex-col gap-4">
-                        <img class="w-[60px] h-[60px]" src="./assets/device.png" alt="">
+                    <div class="max-sm:w-auto lg:w-[790px] flex flex-col gap-[30px]">
+                        <div class="bg-[#35116566]   justify-center max-sm:rounded-[24px] lg:rounded-[40px] lg:p-[40px] flex max-sm:p-[24px] flex-col gap-4">
+                        <img class="max-sm:w-[40px] max-sm:h-[40px] lg:w-[60px] lg:h-[60px]" src="./assets/device.png" alt="">
                         <h4 class="text-white text-2xl font-bold text-start">Mobile Friendly</h4>
                         <p class="font-normal text-white text-[16px] text-start  " >Listen on the go with seamless mobile experience and offline downloads.</p>
                         </div>
-                        <div class="bg-[#35116566]   justify-center rounded-[40px] p-[40px] flex flex-col gap-4">
-                        <img class="w-[60px] h-[60px]" src="./assets/location.png" alt="">
+                        <div class="bg-[#35116566]   justify-center max-sm:rounded-[24px] lg:rounded-[40px] lg:p-[40px] flex max-sm:p-[24px] flex-col gap-4">
+                        <img class="max-sm:w-[40px] max-sm:h-[40px] lg:w-[60px] lg:h-[60px]" src="./assets/location.png" alt="">
                         <h4 class="text-white text-2xl font-bold text-start">Global Community</h4>
                         <p class="font-normal text-white text-[16px] text-start  " >Connect with tech enthusiasts from over 120 countries worldwide.</p>
                         </div>
@@ -118,18 +119,18 @@ Join thousands of young professionals and tech enthusiasts who start their day w
                 </div>
 
 
-                <div class="flex flex-row gap-[30px]">
+                <div class="flex max-sm:flex-col  lg:flex-row gap-[30px]">
                      
                     <div class="flex flex-col gap-[30px]">
-                        <div class="bg-[#35116566] w-[790px]  justify-center rounded-[40px] p-[40px] flex flex-col gap-4">
-                        <img class="w-[60px] h-[60px]" src="./assets/zap-fast.png" alt="">
+                        <div class="bg-[#35116566] max-sm:w-auto lg:w-[790px]  justify-center max-sm:rounded-[24px] lg:rounded-[40px] max-sm:p-[24px] lg:p-[40px] flex flex-col gap-4">
+                        <img class="max-sm:w-[40px] max-sm:h-[40px] lg:w-[60px] lg:h-[60px]" src="./assets/zap-fast.png" alt="">
                         <h4 class="text-white text-2xl font-bold text-start">Exclusive Interviews</h4>
                         <p class="font-normal text-white text-[16px] text-start  " >Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                         </div>
                          
                     </div>
-                    <div class="bg-[#35116566] w-[380px] justify-center rounded-[40px] p-[40px] flex flex-col gap-4">
-                        <img class="w-[60px] h-[60px]" src="./assets/resource.png" alt="">
+                    <div class="bg-[#35116566] max-sm:w-auto lg:w-[380px] justify-center max-sm:rounded-[24px] lg:rounded-[40px] max-sm:p-[24px] lg:p-[40px] flex flex-col gap-4">
+                        <img class="max-sm:w-[40px] max-sm:h-[40px] lg:w-[60px] lg:h-[60px]" src="./assets/resource.png" alt="">
                         <h4 class="text-white text-2xl font-bold text-start">Rich Resources</h4>
                         <p class="font-normal text-white text-[16px] text-start  " >Access show notes, transcripts, and additional learning materials for every episode.</p>
                     </div>
@@ -140,20 +141,20 @@ Join thousands of young professionals and tech enthusiasts who start their day w
 </section>
 
 
-<section class="w-full flex flex-col justify-center pt-[120px] pb-[120px] items-center">
-    <div class="w-[1200px] flex flex-col justify-center gap-[40px] items-center">
+<section class="w-full flex flex-col justify-center max-sm:p-[40px_20px] lg:pt-[120px] lg:pb-[120px] items-center">
+    <div class="max-w-[1200px] m-auto flex flex-col justify-center gap-[24px] lg:gap-[40px] items-center">
         <div class="flex justify-center items-center">
-            <h3 class="text-6xl text-center font-extrabold text-white">Featured Episodes</h3>
+            <h3 class="max-sm:text-[32px] lg:text-6xl text-center font-extrabold text-white">Featured Episodes</h3>
         </div>
 
-        <div class="flex flex-row gap-[30px]">
+        <div class="flex max-sm:flex-col lg:flex-row max-sm:gap-[16px] lg:gap-[30px]">
             <div class="flex rounded-[40px] w-auto bg-[#250D44] flex-col">
                 <div>
                     <iframe width="100%" class="rounded-[40px_40px_0px_0px]" height="214px" src="https://www.youtube.com/embed/svqu6FDiMAs" title="10 NEW CSS Features You Need To Know For 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 <div class="p-[24px] flex flex-col gap-[12px]">
-                    <h4 class="text-white font-bold text-2xl text-start">The Future of AI in Everyday Life
+                    <h4 class="text-white font-bold max-sm:text-[20px] lg:text-2xl text-start">The Future of AI in Everyday Life
                     </h4>
                     
                     <p class="font-normal text-white text-[16px] text-start" >Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
@@ -172,7 +173,7 @@ Join thousands of young professionals and tech enthusiasts who start their day w
                 </div>
 
                 <div class="p-[24px] flex flex-col gap-[12px]">
-                    <h4 class="text-white font-bold text-2xl text-start">Building Better Habits for Remote Work
+                    <h4 class="text-white font-bold max-sm:text-[20px] lg:text-2xl text-start">Building Better Habits for Remote Work
                     </h4>
                     
                     <p class="font-normal text-white text-[16px] text-start" >Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
@@ -190,7 +191,7 @@ Join thousands of young professionals and tech enthusiasts who start their day w
                 </div>
 
                 <div class="p-[24px] flex flex-col gap-[12px]">
-                    <h4 class="text-white font-bold text-2xl text-start">Career Growth in Tech: A Roadmap
+                    <h4 class="text-white font-bold max-sm:text-[20px] lg:text-2xl text-start">Career Growth in Tech: A Roadmap
                     </h4>
                     
                     <p class="font-normal text-white text-[16px] text-start" >Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
